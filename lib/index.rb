@@ -3,6 +3,7 @@
 require 'net/http'
 require 'json'
 require 'time'
+require 'haml_lint'
 
 @GITHUB_SHA = ENV['GITHUB_SHA']
 @GITHUB_EVENT_PATH = ENV['GITHUB_EVENT_PATH']
@@ -74,7 +75,7 @@ def run_haml_lint
   errors = nil
 
   Dir.chdir(@GITHUB_WORKSPACE) do
-    errors = `haml-lint -r json`
+    errors = %x[haml-lint -r json]
   end
   puts errors.inspect
   conclusion = 'success'
