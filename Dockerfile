@@ -1,4 +1,4 @@
-FROM ruby:3.1.2p20
+FROM ruby:3.1.4-alpine
 RUN apk add --no-cache --update build-base linux-headers git
 
 LABEL com.github.actions.name="HAML Lint Code Checks"

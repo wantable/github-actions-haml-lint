@@ -9,7 +9,7 @@ Lint your Ruby code in parallel to your builds.
 
 ## How it works
 
-- Ruby 3.1.2
+- Ruby 3.1.4
 
 
 ![](screenshots/annotations.png)
