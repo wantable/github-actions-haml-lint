@@ -5,6 +5,7 @@ LABEL com.github.actions.name="HAML Lint Code Checks"
 LABEL com.github.actions.description="Lint your Ruby code in parallel to your builds"
 LABEL com.github.actions.icon="code"
 LABEL com.github.actions.color="red"
+LABEL "version"="0.0.1"
 
 LABEL maintainer="Wantable"
 
