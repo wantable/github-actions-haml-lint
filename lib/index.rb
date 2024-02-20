@@ -75,8 +75,9 @@ def run_haml_lint
   errors = nil
   puts HamlLint.name
   Dir.chdir(@GITHUB_WORKSPACE) do
-    errors = JSON.parse(system('haml-lint'))
+    errors = system('haml-lint')
   end
+  puts errors.inspect
   conclusion = 'success'
   count = 0
 
