@@ -10,4 +10,4 @@ LABEL "version"="0.0.1"
 LABEL maintainer="Wantable"
 
 COPY lib /action/lib
-ENTRYPOINT ["/action/lib/entrypoint.sh"]
+ENTRYPOINT ["/action/entrypoint.sh"]
