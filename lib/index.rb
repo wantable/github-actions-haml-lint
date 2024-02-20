@@ -72,8 +72,9 @@ end
 def run_haml_lint
   annotations = []
   errors = nil
+  puts HamlLint.name
   Dir.chdir(@GITHUB_WORKSPACE) do
-    errors = JSON.parse(`haml-lint --format json`)
+    errors = JSON.parse(`haml-lint`)
   end
   conclusion = 'success'
   count = 0
