@@ -8,6 +8,5 @@ gem install rubocop-minitest -v 0.13.0
 gem install rubocop-performance -v 1.11.5
 gem install rubocop-rails -v 2.11.3
 
-rubocop
-
-# ruby /action/lib/index.rb
+gem list
+ruby /action/lib/index.rb
