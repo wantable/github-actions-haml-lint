@@ -1,0 +1,9 @@
+name: 'Github HAML-Lint Action'
+description: 'Runs HAML-Lint on your PRs :)'
+author: 'Wantable'
+branding:
+  icon: 'alert-triangle'
+  color: 'red'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
