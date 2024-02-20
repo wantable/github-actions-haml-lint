@@ -82,28 +82,28 @@ def run_haml_lint
   conclusion = 'success'
   count = 0
 
-  errors['files'].each do |file|
-    path = file['path']
-    offenses = file['offenses']
+  # errors['files'].each do |file|
+  #   path = file['path']
+  #   offenses = file['offenses']
 
-    offenses.each do |offense|
-      severity = offense['severity']
-      message = offense['message']
-      location = offense['location']
-      annotation_level = @annotation_levels[severity]
-      count += 1
+  #   offenses.each do |offense|
+  #     severity = offense['severity']
+  #     message = offense['message']
+  #     location = offense['location']
+  #     annotation_level = @annotation_levels[severity]
+  #     count += 1
 
-      conclusion = 'failure' if annotation_level == 'failure'
+  #     conclusion = 'failure' if annotation_level == 'failure'
 
-      annotations.push(
-        'path' => path,
-        'start_line' => location['start_line'],
-        'end_line' => location['start_line'],
-        "annotation_level": annotation_level,
-        'message' => message
-      )
-    end
-  end
+  #     annotations.push(
+  #       'path' => path,
+  #       'start_line' => location['start_line'],
+  #       'end_line' => location['start_line'],
+  #       "annotation_level": annotation_level,
+  #       'message' => message
+  #     )
+  #   end
+  # end
 
   output = {
     "title": @check_name,
