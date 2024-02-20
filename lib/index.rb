@@ -3,6 +3,7 @@
 require 'net/http'
 require 'json'
 require 'time'
+require 'haml_lint'
 
 @GITHUB_SHA = ENV['GITHUB_SHA']
 @GITHUB_EVENT_PATH = ENV['GITHUB_EVENT_PATH']
