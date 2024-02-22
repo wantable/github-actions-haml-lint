@@ -11,7 +11,5 @@ LABEL maintainer="Wantable"
 
 RUN gem install haml_lint -v 0.57.0
 
-RUN haml_lint -f json
-
 COPY lib /action/lib
 ENTRYPOINT ["/action/lib/entrypoint.sh"]
