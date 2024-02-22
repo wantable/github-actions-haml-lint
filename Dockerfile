@@ -9,7 +9,5 @@ LABEL "version"="0.0.2"
 
 LABEL maintainer="Wantable"
 
-RUN gem install haml_lint -v 0.57.0
-
 COPY lib /action/lib
 ENTRYPOINT ["/action/lib/entrypoint.sh"]
