@@ -1,4 +1,5 @@
-FROM ruby:3.1.4-alpine
+RUN curl -sSL https://get.rvm.io | bash -s stable
+RUN rvm install 3.1.2
 RUN apk add --update build-base git
 
 LABEL com.github.actions.name="HAML Lint Code Checks"
