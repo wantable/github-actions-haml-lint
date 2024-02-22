@@ -74,7 +74,8 @@ def run_haml_lint
   errors = nil
 
   Dir.chdir(@GITHUB_WORKSPACE) do
-    errors = `haml-lint -r json`
+    # errors = `haml-lint -r json`
+    errors = `rubocop --format json`
   end
   puts errors.inspect
   conclusion = 'success'
