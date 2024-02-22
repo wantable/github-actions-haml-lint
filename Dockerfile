@@ -1,5 +1,5 @@
 FROM ruby:3.1.4-alpine
-RUN apk add --no-cache --update build-base linux-headers git
+RUN apk add --update build-base git
 
 LABEL com.github.actions.name="HAML Lint Code Checks"
 LABEL com.github.actions.description="Lint your Ruby code in parallel to your builds"
