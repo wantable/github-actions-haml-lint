@@ -9,5 +9,7 @@ LABEL "version"="0.0.2"
 
 LABEL maintainer="Wantable"
 
+RUN gem install bundler
+
 COPY lib /action/lib
 ENTRYPOINT ["/action/lib/entrypoint.sh"]
